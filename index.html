@@ -343,7 +343,9 @@
     <!-- Scripts -->
 <script>
   var aud = document.getElementById("ASong").children[0];
-aud.click()
+$(document).ready(function(){ 
+     $('#ASong').click(); 
+});
   var isPlaying = false;
   aud.play();
 
