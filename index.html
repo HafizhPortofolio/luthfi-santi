@@ -345,9 +345,9 @@
     <!-- Scripts -->
 <script>
   var aud = document.getElementById("ASong").children[0];
-
-  var isPlaying = false;
-  aud.pause();
+  aud.play();
+  var isPlaying = true;
+  aud.play();
 
   function playPause() {
     if (isPlaying) {
