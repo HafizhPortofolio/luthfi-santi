@@ -357,9 +357,11 @@
     }
     isPlaying = !isPlaying;
   }
-$(document).ready(function(){ 
-     $('#ASong').click(); 
-});
+  // Autoplay the audio when the document is ready
+  document.addEventListener("DOMContentLoaded", function() {
+    aud.play();
+    isPlaying = true;
+  });
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
