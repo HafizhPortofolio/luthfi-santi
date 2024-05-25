@@ -345,9 +345,8 @@
     <!-- Scripts -->
 <script>
   var aud = document.getElementById("ASong").children[0];
-  aud.play();
-  var isPlaying = true;
-  aud.play();
+  var isPlaying = false;
+  aud.pause();
 
   function playPause() {
     if (isPlaying) {
@@ -357,11 +356,7 @@
     }
     isPlaying = !isPlaying;
   }
-    // Autoplay the audio when the document is ready
-  document.addEventListener("DOMContentLoaded", function() {
-    aud.play();
-    isPlaying = true;
-  });
+playPause();
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
