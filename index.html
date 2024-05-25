@@ -324,6 +324,7 @@
 
 <button id="ASong" class="float" onClick="playPause()">
   <audio
+id="song"
     src="../music/audio.mp3"
     autoplay
     loop
@@ -344,9 +345,15 @@
 
     <!-- Scripts -->
 <script>
+  document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('song').play();
+    document.removeEventListener('click', musicPlay);
+}
+
   var aud = document.getElementById("ASong").children[0];
-  var isPlaying = false;
-  aud.pause();
+  var isPlaying = true;
+  aud.play();
 
   function playPause() {
     if (isPlaying) {
@@ -356,7 +363,6 @@
     }
     isPlaying = !isPlaying;
   }
-playPause();
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
