@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
 @font-face {
   font-family: myFirstFont;
-  src: url(../font/Breathing.ttf);
+  src: url("../font/Breathing.ttf");
 }
 .has-vertically-aligned-content {
   display: flex;
@@ -54,7 +54,7 @@ html {
 
 
 .hero .title {
-  font-family: 'Rouge Script', sans-serif;
+  font-family: 'myFirstFont','Rouge Script', sans-serif;
   font-weight: 700;
   transform: rotate(-2deg);
   font-size: 5rem;
